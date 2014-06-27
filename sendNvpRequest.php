@@ -7,8 +7,8 @@
  *                         ambiente de produção.
  *
  * @return array Campos retornados pela operação da API. O array de retorno poderá
- *               pode ser vazio, caso a operação não seja bem sucedida. Nesse caso,
- *               os logs de erro deverão ser verificados.
+ *               ser vazio, caso a operação não seja bem sucedida. Nesse caso, os
+ *               logs de erro deverão ser verificados.
  */
 function sendNvpRequest(array $requestNvp, $sandbox = false)
 {
