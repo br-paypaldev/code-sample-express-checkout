@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <title>Simple Embedded Flow Example</title>
+        <script type="text/javascript" src="https://www.paypalobjects.com/js/external/dg.js"></script>
+        <script type="text/javascript">
+
+            function hi(){
+                alert("Daughter Window Closed!");
+            }
+            /**
+             * There are two ways of launching the form.  One is via javascript, the other is via form.
+             */
+         var flow_Javascript=null; //Global variable that will hold the PayPal library object for the Javascript Option
+
+            /**
+             * This function closes the flow when the payment has been completed.  It should be called from the daughter page in the following way:
+             *
+             * parent.closeFlowWindow();
+             */
+            function closeFlowWindow(){
+
+               //If it was launched via form, close that flow.
+               //if (!flow_Javascript) {try {flow_Form.closeFlow();} catch(e) {console.log(e);}}
+               //Else, close the javascript flow.
+               //else
+                {
+                    try {
+
+                    dgFlowMini.closeFlow();hi();} catch(e) {console.log(e);}
+                }
+               //Remove stale variable. (It will be created again if needed)
+               //delete flow_Javascript;
+            }
+
+            /**
+             * This is the second way to launch the embedded flow, via javascript.
+             */
+            function javascriptLaunch(){
+
+                var url = document.getElementById("url").value; //Grab the paykey from the form. This field can be directly populated by your server.
+                flow_Javascript = new PAYPAL.apps.DGFlow({trigger:null, expType:"mini"});
+                flow_Javascript.startFlow(url);
+
+            }
+        </script>
+    </head>
+	<body>
+        <p>Colocar a URL de redirect do Adaptive Accounts (lembrando que CreateAccountRequest.CreateAccountWebOptionsType.useMinibrowser deve ser true)</p>
+ 
+         URL: <input id='url' type='text' name='url1'><br> 
+         Testar: <input id='bt' type='button' name='Testar' value='Adaptive Accounts' onclick="javascriptLaunch();"> 
+          
+    </body>
+</html>
