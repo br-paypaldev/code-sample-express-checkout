@@ -8,9 +8,9 @@ if ( isset( $_GET[ 'token' ] ) ) {
 		'TOKEN'								=> $token,
 		'METHOD'							=> 'CreateBillingAgreement',
 		'VERSION'							=> '73.0', 
-		'PWD'								=> 'N3VULNC5KXXX77ED',
-		'USER'								=> 'fasilva_api1.paypal.com',
-		'SIGNATURE'							=> 'AFcWxV21C7fd0v3bYYYRCpSSRl31A6dTscbyIFaXQ9Rlb5t3OkCqeBtj', 
+		'PWD'								=> '',
+		'USER'								=> '',
+		'SIGNATURE'							=> '', 
 	);
 
 	$curl = curl_init();
