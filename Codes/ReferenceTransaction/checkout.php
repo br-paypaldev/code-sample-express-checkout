@@ -4,19 +4,19 @@ $total = '0.5'; //Total do carrinho do cliente
 $nvp = array(
 
 	'LOCALECODE'                        => 'pt_BR',
-    'L_BILLINGAGREEMENTDESCRIPTION0'    => 'Aqui você fará o acordo com a Safer Taxi. Nenhum valor será debitado', 
-    'L_BILLINGTYPE0'			        => 'MerchantInitiatedBillingSingleAgreement',
+    	'L_BILLINGAGREEMENTDESCRIPTION0'    => 'Aqui vocÃª farÃ¡ o acordo com a Safer Taxi. Nenhum valor serÃ¡ debitado', 
+    	'L_BILLINGTYPE0'		    => 'MerchantInitiatedBillingSingleAgreement',
 	'AMT'                               => '0',
-    'L_PAYMENTTYPE0'           			=> 'Any',
+    	'L_PAYMENTTYPE0'           	    => 'Any',
 	'TAXIDTYPE'                         => 'BR_CPF',
 	'TAXIDDETAILS'                      => '39717205876',
-	'RETURNURL'							=> 'http://127.0.0.1/ReferenceTransaction/return.php',
-	'CANCELURL'							=> 'http://127.0.0.1/ReferenceTransaction/checkout.php',
-	'METHOD'							=> 'SetExpressCheckout',
-	'VERSION'							=> '73.0',
-	'PWD'								=> 'N3VULNC5KXXX77ED',
-		'USER'								=> 'fasilva_api1.paypal.com',
-		'SIGNATURE'							=> 'AFcWxV21C7fd0v3bYYYRCpSSRl31A6dTscbyIFaXQ9Rlb5t3OkCqeBtj', 
+	'RETURNURL'			    => 'http://127.0.0.1/ReferenceTransaction/return.php',
+	'CANCELURL'			    => 'http://127.0.0.1/ReferenceTransaction/checkout.php',
+	'METHOD'			    => 'SetExpressCheckout',
+	'VERSION'			    => '73.0',
+	'PWD'				    => '',
+	'USER'				    => '',
+	'SIGNATURE'			    => '', 
 
 );
 
