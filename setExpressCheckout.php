@@ -44,7 +44,7 @@ $requestNvp = array(
     'L_PAYMENTREQUEST_0_DESC0' => 'Produto A – 110V',
     'L_PAYMENTREQUEST_0_AMT0' => '11.00',
     'L_PAYMENTREQUEST_0_QTY0' => '1',
-    'L_PAYMENTREQUEST_0_ITEMAMT' => '11.00',
+   
     'L_PAYMENTREQUEST_0_NAME1' => 'Item B',
     'L_PAYMENTREQUEST_0_DESC1' => 'Produto B – 220V',
     'L_PAYMENTREQUEST_0_AMT1' => '11.00',
